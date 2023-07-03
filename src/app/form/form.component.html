@@ -1,0 +1,22 @@
+<form>
+        <div class="form-group col-8">
+            <label for="inputEmail4">First Name</label>
+            <input type="text" class="form-control" id="inputEmail4" placeholder="first name" required>
+          </div>
+          <div class="form-group col-8">
+            <label for="inputEmail4">Last Name</label>
+            <input type="text" class="form-control" id="inputEmail4" placeholder="last name" required>
+          </div>           
+      <div class="form-group col-8">
+        <label for="inputState">How should we contact you?</label>
+        <br>        
+        <div class="form-group">
+        <input type="radio" name="radioIn" value="contact" (click)="handleRadioClick1()" #ContactNum>Phone
+        <input type="text" placeholder="Phone" [class.d-none]="isHidden" > 
+        </div>
+        <div class="form-group">
+        <input type="radio" name="radioIn" value="email" (click)="handleRadioClick2()" #ContactNum2>Email
+        <input type="text" placeholder="email" [class.d-none]="isHidden2" > 
+        </div>
+    </div>      
+  </form>
